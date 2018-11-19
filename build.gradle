@@ -17,8 +17,8 @@ dependencies {
 }
 
 publishPlugin {
-    username intellijPublishUsername
-    password intellijPublishPassword
+//    username intellijPublishUsername
+//    password intellijPublishPassword
 }
 
 
@@ -30,5 +30,7 @@ patchPluginXml {
       1.添加了Map组件.<br>
       2.修复了一些bug.<br>
       3.修复了属性提示, 因为之前的替换空格而误操作, 现已修复.<br>
+      4.添加更多属性, a:for-item、a:for-index等.<br>
+      5.修复小bug<br>
       """
 }

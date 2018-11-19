@@ -2735,5 +2735,64 @@
                 "enumValue": []
             }
         ]
-    }
+    },
+    {
+        "tag": "template",
+        "parent": [],
+        "child": [],
+        "description": "template code",
+        "attrs": [
+            {
+                "valueName": "is",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Declare the template you need to use",
+                "isRequired": true,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "data",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Then pass in the data needed by the template",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            }
+        ]
+    },
+    {
+        "tag": "import",
+        "parent": [],
+        "child": [],
+        "description": "template code",
+        "attrs": [
+            {
+                "valueName": "src",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "template url",
+                "isRequired": true,
+                "isEnum": false,
+                "enumValue": []
+            }
+        ]
+    },{
+    "tag": "include",
+    "parent": [],
+    "child": [],
+    "description": "template code",
+    "attrs": [
+        {
+            "valueName": "src",
+            "valueType": "String",
+            "defaultValue": "",
+            "description": "template url",
+            "isRequired": true,
+            "isEnum": false,
+            "enumValue": []
+        }
+    ]
+}
 ]

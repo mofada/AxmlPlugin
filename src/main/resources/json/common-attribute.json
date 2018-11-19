@@ -93,7 +93,43 @@
         "valueName": "a:for",
         "valueType": "Mustache",
         "defaultValue": "",
-        "description": "Mustache for loop",
+        "description": "Attributes can be bound to an array, and then the component can be rendered repeatedly using the data from each item in the array.",
+        "isRequired": false,
+        "isEnum": false,
+        "enumValue": []
+    },
+    {
+        "valueName": "a:for-index",
+        "valueType": "Mustache",
+        "defaultValue": "",
+        "description": "You can specify the variable name of the current subscript of the array.",
+        "isRequired": false,
+        "isEnum": false,
+        "enumValue": []
+    },
+    {
+        "valueName": "a:for-item",
+        "valueType": "Mustache",
+        "defaultValue": "",
+        "description": "You can specify the variable name of the current element of the array",
+        "isRequired": false,
+        "isEnum": false,
+        "enumValue": []
+    },
+    {
+        "valueName": "a:key",
+        "valueType": "Mustache",
+        "defaultValue": "",
+        "description": "If the location of the item in the list changes dynamically or a new item is added to the list, and you want the item in the list to maintain its own characteristics and state (such as the input in <input/>, the selected state of <switch/>) You need to use a:key to specify a unique identifier for the item in the list.",
+        "isRequired": false,
+        "isEnum": false,
+        "enumValue": []
+    },
+    {
+        "valueName": "key",
+        "valueType": "Mustache",
+        "defaultValue": "",
+        "description": "Key is a more general way of writing than a:key, which can be filled with arbitrary expressions and strings.",
         "isRequired": false,
         "isEnum": false,
         "enumValue": []
@@ -102,7 +138,7 @@
         "valueName": "a:if",
         "valueType": "Mustache",
         "defaultValue": "",
-        "description": "Mustache if expression",
+        "description": "To determine if you need to render the code block",
         "isRequired": false,
         "isEnum": false,
         "enumValue": []

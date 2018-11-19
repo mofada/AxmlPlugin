@@ -148,7 +148,7 @@ public class AxmlAnnotator implements Annotator {
                     createAnnotation(attribute, holder, attributeName, " can only be in " + arrayToString(attrsBean.getEnumValue()));
                 }
             }
-        } else {
+        } else if (!attributeName.startsWith("data-")) {
             holder.createErrorAnnotation(attribute.getNameElement(), attributeName + " attribute does not exist");
         }
     }

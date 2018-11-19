@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>cn.mofada.axml.plugin</id>
     <name>Axml Of DingTalk</name>
-    <vendor email="fada@mofada.com" url="https://www.mofada.cn">About me</vendor>
+    <vendor email="fada@mofada.cn" url="https://www.mofada.cn">About me</vendor>
 
     <description><![CDATA[
     应用于钉钉E应用的axml文件插件<br/>
