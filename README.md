@@ -7,7 +7,7 @@
 - 标签验证
 ![标签验证](images/tags-verification.png )
 - 属性提示
-![属性提示](images/attribute-tag.png)
+![属性提示](images/attribute-tip.png)
 - 属性描述
 ![属性提示](images/attribute-description.png)
 - 属性枚举
