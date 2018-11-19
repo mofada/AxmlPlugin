@@ -1,0 +1,2739 @@
+[
+    {
+        "tag": "view",
+        "parent": [],
+        "child": [],
+        "description": "View container. Equivalent to the web div or react-native View.",
+        "attrs": [
+            {
+                "valueName": "disable-scroll",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Whether to prevent scrolling pages in the area",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "hover-class",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Style class added when clicked",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "hover-start-time",
+                "valueType": "Number",
+                "defaultValue": "",
+                "description": "Click state after a long press, in milliseconds",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "hover-stay-time",
+                "valueType": "Number",
+                "defaultValue": "",
+                "description": "Click release state retention time after release, in milliseconds",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "hidden",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Whether to hide",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "animation",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "For animation, see dd.createAnimation",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "slot",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            }
+        ]
+    },
+    {
+        "tag": "scroll-view",
+        "parent": [],
+        "child": [],
+        "description": "Scrollable view area",
+        "attrs": [
+            {
+                "valueName": "scroll-x",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Whether to allow horizontal scrolling",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "scroll-y",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Whether to allow vertical scrolling",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "upper-threshold",
+                "valueType": "Number",
+                "defaultValue": "50",
+                "description": "Trigger from the top/left side (px)",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "lower-threshold",
+                "valueType": "Number",
+                "defaultValue": "50",
+                "description": "Trigger from the bottom/right distance (px)",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "scroll-top",
+                "valueType": "Number",
+                "defaultValue": "",
+                "description": "Vertical scroll bar position",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "scroll-left",
+                "valueType": "Number",
+                "defaultValue": "",
+                "description": "Horizontal scroll bar position",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "scroll-into-view",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "The value is the id of a child element, scroll to the element, and the top of the element is aligned at the top of the scrolling area",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "scroll-with-animation",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Whether to use animated transitions when setting the scrollbar position",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onScrollToUpper",
+                "valueType": "EventHandle",
+                "defaultValue": "",
+                "description": "Triggered when scrolling to the top/left",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onScrollToLower",
+                "valueType": "EventHandle",
+                "defaultValue": "",
+                "description": "Triggered when scrolling to the bottom/right",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onScroll",
+                "valueType": "EventHandle",
+                "defaultValue": "",
+                "description": "Event.detail = {scrollLeft, scrollTop, scrollHeight, scrollWidth, deltaX, deltaY} when scrolling",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            }
+        ]
+    },
+    {
+        "tag": "swiper",
+        "child": [
+            "swiper-item"
+        ],
+        "parent": [],
+        "description": "Slider view container.",
+        "attrs": [
+            {
+                "valueName": "indicator-dots",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Whether to display the cue point",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "indicator-color",
+                "valueType": "Color",
+                "defaultValue": "rgba(0,0,0,.3)",
+                "description": "Point color",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "indicator-active-color",
+                "valueType": "Color",
+                "defaultValue": "#000",
+                "description": "The currently selected cue point color",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "autoplay",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Whether to switch automatically",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "current",
+                "valueType": "Number",
+                "defaultValue": "0",
+                "description": "Current page index",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "duration",
+                "valueType": "Number",
+                "defaultValue": "500",
+                "description": "Sliding animation duration",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "interval",
+                "valueType": "Number",
+                "defaultValue": "500",
+                "description": "Automatic switching interval",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "circular",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Whether to enable unlimited sliding",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onChange",
+                "valueType": "Function",
+                "defaultValue": "",
+                "description": "Triggered when current changes, event.detail = {current: current}",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            }
+        ]
+    },
+    {
+        "tag": "swiper-item",
+        "parent": [
+            "swiper"
+        ],
+        "child": [],
+        "description": "Can only be placed in the component, the width and height are automatically set to 100%."
+    },
+    {
+        "tag": "text",
+        "parent": [],
+        "child": [],
+        "description": "text.Within the component only supports <text/>nested.",
+        "attrs": [
+            {
+                "valueName": "selectable",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Optional",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            }
+        ]
+    },
+    {
+        "tag": "icon",
+        "parent": [],
+        "child": [],
+        "description": "icon",
+        "attrs": [
+            {
+                "valueName": "type",
+                "valueType": "String",
+                "defaultValue": "info",
+                "description": "icon Type, valid value： info, warn, waiting, cancel, download, search, clear, success, success_no_circle",
+                "isRequired": false,
+                "isEnum": true,
+                "enumValue": [
+                    "info",
+                    "warn",
+                    "waiting",
+                    "cancel",
+                    "download",
+                    "search",
+                    "clear",
+                    "success",
+                    "success_no_circle"
+                ]
+            },
+            {
+                "valueName": "size",
+                "valueType": "Number",
+                "defaultValue": "23",
+                "description": "Icon size, unit px",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "color",
+                "valueType": "Color",
+                "defaultValue": "",
+                "description": "Icon color, with css color",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            }
+        ]
+    },
+    {
+        "tag": "progress",
+        "parent": [],
+        "child": [],
+        "description": "progress bar.",
+        "attrs": [
+            {
+                "valueName": "percent",
+                "valueType": "Float",
+                "defaultValue": "",
+                "description": "Percentage (0~100)",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "show-info",
+                "valueType": "Boolean",
+                "defaultValue": "",
+                "description": "Show percentage value on the right",
+                "isRequired": false,
+                "isEnum": true,
+                "enumValue": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "valueName": "stroke-width",
+                "valueType": "Number",
+                "defaultValue": "6",
+                "description": "Line thickness, unit px",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "activeColor",
+                "valueType": "Color",
+                "defaultValue": "#09BB07",
+                "description": "Selected progress bar color",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "backgroundColor",
+                "valueType": "Color",
+                "defaultValue": "#09BB07",
+                "description": "Unselected progress bar color",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "active",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Whether to load animation from left to right",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            }
+        ]
+    },
+    {
+        "tag": "image",
+        "parent": [],
+        "child": [],
+        "description": "image",
+        "attrs": [
+            {
+                "valueName": "src",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "The map's address",
+                "isRequired": true,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "mode",
+                "valueType": "String",
+                "defaultValue": "scaleToFill",
+                "description": "Picture mode",
+                "isRequired": false,
+                "isEnum": true,
+                "enumValue": [
+                    "scaleToFill",
+                    "aspectFit",
+                    "aspectFill",
+                    "widthFix",
+                    "top",
+                    "bottom",
+                    "center",
+                    "left",
+                    "right",
+                    "topleft",
+                    "topright",
+                    "bottomleft",
+                    "bottomright"
+                ]
+            },
+            {
+                "valueName": "onError",
+                "valueType": "HandleEvent",
+                "defaultValue": "",
+                "description": "Fires when the image loads incorrectly, event object event.detail = {errMsg: 'something wrong'}",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onLoad",
+                "valueType": "HandleEvent",
+                "defaultValue": "",
+                "description": "Fires when the image is loaded, event object event.detail = {height: 'image height px', width: 'image width px'}",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            }
+        ]
+    },
+    {
+        "tag": "button",
+        "parent": [],
+        "child": [],
+        "description": "button",
+        "attrs": [
+            {
+                "valueName": "size",
+                "valueType": "String",
+                "defaultValue": "default",
+                "description": "Valid value default, mini",
+                "isRequired": false,
+                "isEnum": true,
+                "enumValue": [
+                    "default",
+                    "mini"
+                ]
+            },
+            {
+                "valueName": "open-type",
+                "valueType": "String",
+                "defaultValue": "default",
+                "description": "Open ability -> Trigger custom sharing, use canIUse('button.open-type.share')",
+                "isRequired": false,
+                "isEnum": true,
+                "enumValue": [
+                    "share"
+                ]
+            },
+            {
+                "valueName": "type",
+                "valueType": "String",
+                "defaultValue": "default",
+                "description": "The style type of the button, valid values ​​primary, default, warn",
+                "isRequired": false,
+                "isEnum": true,
+                "enumValue": [
+                    "primary",
+                    "default",
+                    "warn"
+                ]
+            },
+            {
+                "valueName": "plain",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Whether it is hollow",
+                "isRequired": false,
+                "isEnum": true,
+                "enumValue": [
+                    "primary",
+                    "default",
+                    "warn"
+                ]
+            },
+            {
+                "valueName": "disabled",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Whether to disable",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "loading",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Whether the loading icon is in front of the button text",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "form-type",
+                "valueType": "String",
+                "defaultValue": "false",
+                "description": "Valid values: submit, reset, for form components, click to trigger the submit/reset event",
+                "isRequired": false,
+                "isEnum": true,
+                "enumValue": [
+                    "submit",
+                    "reset"
+                ]
+            },
+            {
+                "valueName": "hover-class",
+                "valueType": "String",
+                "defaultValue": "button-hover",
+                "description": "The style class that the button presses. Hover-class=\"none\" means no click effect",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "hover-start-time",
+                "valueType": "Number",
+                "defaultValue": "20",
+                "description": "Click state after the number of events after holding down, in milliseconds",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "hover-stay-time",
+                "valueType": "Number",
+                "defaultValue": "70",
+                "description": "Click state retention time after the finger is released, in milliseconds",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            }
+        ]
+    },
+    {
+        "tag": "form",
+        "parent": [],
+        "child": [],
+        "description": "A form for submitting components such as <textarea>, <switch/>, <input/>, <checkbox-group/>, <slider/>, <radio-group/>, <picker/>etc. entered by the user within the component. When you click formthe form formTypeto submitthe buttoncomponent, the component will form the valuevalues submitted in the form required components plus nameas key.",
+        "attrs": [
+            {
+                "valueName": "onSubmit",
+                "valueType": "EventHandle",
+                "defaultValue": "",
+                "description": "Carrying the data in the form triggers the submit event, event.detail = {value : {'name': 'value'} }",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onReset",
+                "valueType": "EventHandle",
+                "defaultValue": "",
+                "description": "The reset event is fired when the form is reset",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            }
+        ]
+    },
+    {
+        "tag": "label",
+        "parent": [],
+        "child": [],
+        "description": "LabelForm can be used to improve the availability of components, the use of forthe attribute to find the corresponding component id, or components on this tab, when clicked, the corresponding components are focused. for The priority is higher than the internal components, and the first component is triggered by default when there are multiple components inside. he controls that can currently be bound are:<checkbox/>, <radio/>, <input/>, <textarea/>",
+        "attrs": [
+            {
+                "valueName": "for",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Bind component id",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            }
+        ]
+    },
+    {
+        "tag": "input",
+        "parent": [],
+        "child": [],
+        "description": "Input box",
+        "attrs": [
+            {
+                "valueName": "value",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Initial content",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "name",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Component name for form submission to get data",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "type",
+                "valueType": "String",
+                "defaultValue": "text",
+                "description": "Type of input, valid values: text",
+                "isRequired": false,
+                "isEnum": true,
+                "enumValue": [
+                    "text",
+                    "number",
+                    "digit",
+                    "idcard"
+                ]
+            },
+            {
+                "valueName": "password",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Is it a password type?",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "placeholder",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Placeholder",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "disabled",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Whether to disable",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "maxlength",
+                "valueType": "Number",
+                "defaultValue": "140",
+                "description": "The maximum length",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "focus",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Get focus",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onInput",
+                "valueType": "EventHandle",
+                "defaultValue": "",
+                "description": "The input event is triggered when the keyboard is input, event.detail = {value: value}",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onConfirm",
+                "valueType": "EventHandle",
+                "defaultValue": "",
+                "description": "Triggered when the keyboard is clicked, event.detail = {value: value}",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onFocus",
+                "valueType": "EventHandle",
+                "defaultValue": "",
+                "description": "Triggered on focus, event.detail = {value: value}",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onBlur",
+                "valueType": "EventHandle",
+                "defaultValue": "",
+                "description": "Fires when the focus is lost, event.detail = {value: value}",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            }
+        ]
+    },
+    {
+        "tag": "textarea",
+        "parent": [],
+        "child": [],
+        "description": "Input box",
+        "attrs": [
+            {
+                "valueName": "name",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Component name for form submission to get data",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "value",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Initial content",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "placeholder",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Placeholder",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "disabled",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Whether to disable",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "maxlength",
+                "valueType": "Number",
+                "defaultValue": "140",
+                "description": "Maximum length, when set to -1 does not limit the maximum length",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "focus",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Get focus",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "auto-height",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Whether to increase automatically",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onInput",
+                "valueType": "EventHandle",
+                "defaultValue": "",
+                "description": "Trigger on keyboard input, event.detail = {value: value}, you can directly return a string to replace the contents of the input box",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onFocus",
+                "valueType": "EventHandle",
+                "defaultValue": "",
+                "description": "Event.detail = {value: value} is triggered when the input box is focused",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onBlur",
+                "valueType": "EventHandle",
+                "defaultValue": "",
+                "description": "Fires when the input box loses focus, event.detail = {value: value}",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onConfirm",
+                "valueType": "EventHandle",
+                "defaultValue": "",
+                "description": "Triggered when click is complete, event.detail = {value: value}",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            }
+        ]
+    },
+    {
+        "tag": "radio-group",
+        "parent": [],
+        "child": [
+            "radio"
+        ],
+        "description": "Single selector group.",
+        "attrs": [
+            {
+                "valueName": "onChange",
+                "valueType": "EventHandle",
+                "defaultValue": "",
+                "description": "Fires when the selected item changes, event.detail = {value: the value of the selected radio)",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "name",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Component name for form submission to get data",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            }
+        ]
+    },
+    {
+        "tag": "radio",
+        "parent": [
+            "radio-group"
+        ],
+        "child": [],
+        "description": "Single item.",
+        "attrs": [
+            {
+                "valueName": "value",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Component value, the value that the change event will carry when selected",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "checked",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Is it currently selected?",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "disabled",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Whether to disable",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            }
+        ]
+    },
+    {
+        "tag": "checkbox-group",
+        "parent": [],
+        "child": [
+            "checkbox"
+        ],
+        "description": "Multiple selector group.",
+        "attrs": [
+            {
+                "valueName": "name",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Component name for form submission to get data",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onChange",
+                "valueType": "EventHandle",
+                "defaultValue": "",
+                "description": "Triggered when the selected item changes, detail = {value: the value of the selected checkbox item value}",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            }
+        ]
+    },
+    {
+        "tag": "checkbox",
+        "parent": [
+            "checkbox-group"
+        ],
+        "child": [],
+        "description": "checkbox",
+        "attrs": [
+            {
+                "valueName": "value",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Component value, the value that the change event will carry when selected",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "checked",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Whether it is currently selected, can be used to set the default selection",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "disabled",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Whether to disable",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onChange",
+                "valueType": "EventHandle",
+                "defaultValue": "",
+                "description": "Fires when the component changes, detail = {value: whether the checkbox is checked}",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            }
+        ]
+    },
+    {
+        "tag": "switch",
+        "parent": [],
+        "child": [],
+        "description": "Single item.",
+        "attrs": [
+            {
+                "valueName": "name",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Component name for form submission to get data",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "checked",
+                "valueType": "Boolean",
+                "defaultValue": "",
+                "description": "Whether to select",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "disabled",
+                "valueType": "Boolean",
+                "defaultValue": "",
+                "description": "Whether to disable",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "color",
+                "valueType": "Color",
+                "defaultValue": "",
+                "description": "Component color",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onChange",
+                "valueType": "EventHandle",
+                "defaultValue": "",
+                "description": "Triggered when checked, event.detail={ value:checked}",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            }
+        ]
+    },
+    {
+        "tag": "slider",
+        "parent": [],
+        "child": [],
+        "description": "Slide the selector.",
+        "attrs": [
+            {
+                "valueName": "name",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Component name for form submission to get data",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "min",
+                "valueType": "Number",
+                "defaultValue": "0",
+                "description": "Minimum value",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "max",
+                "valueType": "Number",
+                "defaultValue": "100",
+                "description": "Maximum",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "step",
+                "valueType": "Number",
+                "defaultValue": "1",
+                "description": "Step size, value must be greater than 0, and can be divisible by (max - min)",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "disabled",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Whether to disable",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "value",
+                "valueType": "Number",
+                "defaultValue": "0",
+                "description": "Current value",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "show-value",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Whether to display the current value",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "activeColor",
+                "valueType": "Color",
+                "defaultValue": "#108ee9",
+                "description": "Selected color",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "backgroundColor",
+                "valueType": "Color",
+                "defaultValue": "#ddd",
+                "description": "Background strip color",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "trackSize",
+                "valueType": "Number",
+                "defaultValue": "4",
+                "description": "Track line height",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "handleSize",
+                "valueType": "Number",
+                "defaultValue": "22",
+                "description": "Slider size",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "handleColor",
+                "valueType": "Color",
+                "defaultValue": "#fff",
+                "description": "Slider fill color",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onChange",
+                "valueType": "EventHandle",
+                "defaultValue": "",
+                "description": "Fired after a drag, event.detail = {value: value}",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            }
+        ]
+    },
+    {
+        "tag": "block",
+        "parent": [],
+        "child": [],
+        "description": "code block",
+        "attrs": []
+    },
+    {
+        "tag": "picker-view",
+        "parent": [],
+        "child": [
+            "picker-view-column"
+        ],
+        "description": "A scroll selector embedded in the page.",
+        "attrs": [
+            {
+                "valueName": "value",
+                "valueType": "NumberArray",
+                "defaultValue": "",
+                "description": "The number indicates the corresponding index in picker-view-column (starting at 0)",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "indicatorStyle",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Check box style",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onChange",
+                "valueType": "EventHandle",
+                "defaultValue": "",
+                "description": "Triggered when the value is changed by scrolling, event.detail = {value: value}; value is an array representing the picker-view-column index in the picker-view, starting at 0",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            }
+        ]
+    },
+    {
+        "tag": "picker-view-column",
+        "parent": [
+            "picker-view"
+        ],
+        "child": [],
+        "description": "picker-view column",
+        "attrs": []
+    },
+    {
+        "tag": "picker",
+        "parent": [],
+        "child": [],
+        "description": "A scroll selector that pops up from the bottom.",
+        "attrs": [
+            {
+                "valueName": "range",
+                "valueType": "String[]/Object[]",
+                "defaultValue": "",
+                "description": "String[] indicates a selectable list of strings. Object[] must specify range-key to indicate a selectable field.",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "range-key",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "When range is an Object[], the value of the key in the Object is specified as a selector by range-key.",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "value",
+                "valueType": "Number",
+                "defaultValue": "",
+                "description": "Indicates that the first of the ranges is selected (subscript starts at 0)",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onChange",
+                "valueType": "EventHandle",
+                "defaultValue": "",
+                "description": "Triggered when value changes, event.detail = {value: value}",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "disabled",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Whether to disable",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            }
+        ]
+    },
+    {
+        "tag": "navigator",
+        "parent": [],
+        "child": [],
+        "description": "Page link.",
+        "attrs": [
+            {
+                "valueName": "hover-class",
+                "valueType": "String",
+                "defaultValue": "none",
+                "description": "Class attached when clicked",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "hover-start-time",
+                "valueType": "Number",
+                "defaultValue": "",
+                "description": "How long does it take to hold the click state, in milliseconds",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "hover-stay-time",
+                "valueType": "Number",
+                "defaultValue": "",
+                "description": "Click state retention time after the finger is released, in milliseconds",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "url",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "In-app jump link",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "open-type",
+                "valueType": "String",
+                "defaultValue": "navigate",
+                "description": "Jump mode",
+                "isRequired": false,
+                "isEnum": true,
+                "enumValue": [
+                    "navigate",
+                    "redirect",
+                    "switchTab",
+                    "navigateBack"
+                ]
+            }
+        ]
+    },
+    {
+        "tag": "canvas",
+        "parent": [],
+        "child": [],
+        "description": "canvas",
+        "attrs": [
+            {
+                "valueName": "width",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "canvas width attribute",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "height",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "canvas height attribute",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "disable-scroll",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Disable screen scrolling and pull-down refresh",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            }
+        ]
+    },
+    {
+        "tag": "dd-charts",
+        "parent": [],
+        "child": [],
+        "description": "The chart component is based on the canvas capability of the E application framework and is developed on the basis of AntV-F2 . For specific types of graphics, refer to AntV-F2-Demo . The Guide.Html helper element component based on the Document object operation is not available, and all other AntV-F2 features are supported.",
+        "attrs": [
+            {
+                "valueName": "canvasId",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Chart drawing canvasId, required",
+                "isRequired": true,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onDraw",
+                "valueType": "Function",
+                "defaultValue": "",
+                "description": "The component initializes the callback method, the callback returns the chart component instance ddChart ( F2 chart instance ), F2 global object",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            }
+        ]
+    },
+    {
+        "tag": "web-view",
+        "parent": [],
+        "child": [],
+        "description": "<web-view /> A component is a component that can be used to host H5 web pages, automatically spreading the entire E application page. Developers are required to configure the secure domain name of the H5 web page in the developer background. Note: There can only be one per page <web-view />, which automatically spreads the entire page and overwrites other components. Temporary support for JSAPI use in subsequent micro-applications is not supported.",
+        "attrs": [
+            {
+                "valueName": "src",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Web-view The URL of the H5 page to be rendered. H5 web page URL needs to log in to the developer background to perform H5 domain whitelist configuration.",
+                "isRequired": true,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onMessage",
+                "valueType": "EventHandler",
+                "defaultValue": "",
+                "description": "The web page applies a postMessage message to E. E.detail = { data }",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            }
+        ]
+    },
+    {
+        "tag": "qrcode",
+        "parent": [],
+        "child": [],
+        "description": "QR code components need to be installed separately \"npm install mini-ddui-qrcode --save\"or\"yarn add mini-ddui-qrcode\"",
+        "attrs": [
+            {
+                "valueName": "name",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Custom name to distinguish different QR code instances, required",
+                "isRequired": true,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "size",
+                "valueType": "Number",
+                "defaultValue": "300",
+                "description": "	QR code size, required",
+                "isRequired": true,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "text",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "The text used to generate the QR code",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "ecc",
+                "valueType": "Number",
+                "defaultValue": "2",
+                "description": "Fault tolerance level, divided into 1 to 4 levels, default level 2",
+                "isRequired": false,
+                "isEnum": true,
+                "enumValue": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            }
+        ]
+    },
+    {
+        "tag": "breadcrumb",
+        "parent": [],
+        "child": [],
+        "description": "breadcrumb",
+        "attrs": [
+            {
+                "valueName": "values",
+                "valueType": "Array",
+                "defaultValue": "",
+                "description": "project value",
+                "isRequired": true,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onItemTap",
+                "valueType": "EventHandle",
+                "defaultValue": "",
+                "description": "project clickback, Function({index, value})",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            }
+        ]
+    },
+    {
+        "tag": "card",
+        "parent": [],
+        "child": [],
+        "description": "card",
+        "attrs": [
+            {
+                "valueName": "thumb",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Card thumbnail address",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "title",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Card title",
+                "isRequired": true,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "subTitle",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Card subtitle",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "footer",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Footer text",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "footerImg",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Footer image address",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onCardClick",
+                "valueType": "EventHandle",
+                "defaultValue": "",
+                "description": "Card clickback callback, Function({info})",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "info",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Used to pass data out when clicking a card",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            }
+        ]
+    },
+    {
+        "tag": "grid",
+        "parent": [],
+        "child": [],
+        "description": "grid",
+        "attrs": [
+            {
+                "valueName": "list",
+                "valueType": "Array",
+                "defaultValue": "",
+                "description": "Palace data,  [{'icon': 'imgUrl', 'text': 'title'}]",
+                "isRequired": true,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onGridItemClick",
+                "valueType": "Array",
+                "defaultValue": "",
+                "description": "Click on the palace item callback ,(index: number) => void",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "columnNum",
+                "valueType": "Number",
+                "defaultValue": "",
+                "description": "Display several columns per line",
+                "isRequired": false,
+                "isEnum": true,
+                "enumValue": [
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            {
+                "valueName": "circular",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Whether rounded",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "hasLine",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Is there a border",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            }
+        ]
+    },
+    {
+        "tag": "input-item",
+        "parent": [],
+        "child": [],
+        "description": "input item",
+        "attrs": [
+            {
+                "valueName": "className",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Custom class",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "labelCls",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Custom label class",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "inputCls",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Custom input class",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "last",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Whether the last line",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "value",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Initial content",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "name",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Component name for form submission to get data",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "type",
+                "valueType": "String",
+                "defaultValue": "text",
+                "description": "Component name for form submission to get data",
+                "isRequired": false,
+                "isEnum": true,
+                "enumValue": [
+                    "text",
+                    "number",
+                    "idcard",
+                    "digit"
+                ]
+            },
+            {
+                "valueName": "password",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Is it a password type",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "placeholder",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "placeholder",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "placeholderStyle",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Specify the style of the placeholder",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "placeholderClass",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Specify the class of the placeholder",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "disabled",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Whether to disable",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "maxlength",
+                "valueType": "Number",
+                "defaultValue": "140",
+                "description": "max length",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "focus",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "get focus",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onInput",
+                "valueType": "EventHandle",
+                "defaultValue": "",
+                "description": "The input event is triggered when the keyboard is input, event.detail = {value: value}",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onConfirm",
+                "valueType": "EventHandle",
+                "defaultValue": "",
+                "description": "Triggered when the keyboard is clicked, event.detail = {value: value}",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onFocus",
+                "valueType": "EventHandle",
+                "defaultValue": "",
+                "description": "Triggered on focus, event.detail = {value: value}",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onBlur",
+                "valueType": "EventHandle",
+                "defaultValue": "",
+                "description": "Fires when the focus is lost, event.detail = {value: value}",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            }
+        ]
+    },
+    {
+        "tag": "list",
+        "parent": [],
+        "child": [
+            "list-item"
+        ],
+        "description": "list",
+        "attrs": [
+            {
+                "valueName": "className",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Custom class",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            }
+        ]
+    },
+    {
+        "tag": "list-item",
+        "parent": [],
+        "child": [],
+        "description": "list",
+        "attrs": [
+            {
+                "valueName": "className",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Custom class",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "thumb",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "thumb image address",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "arrow",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Whether with an arrow",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "align",
+                "valueType": "String",
+                "defaultValue": "middle",
+                "description": "Child elements are vertically aligned, optional top, middle, bottom",
+                "isRequired": false,
+                "isEnum": true,
+                "enumValue": [
+                    "top",
+                    "middle",
+                    "bottom"
+                ]
+            },
+            {
+                "valueName": "index",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "The unique index of the list item (as a parameter to the onClick callback function)",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onClick",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Call this function when clicking list-item, Function({index}) returns the value passed in the index attribute",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "last",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Is it the last item in the list",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "disabled",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Not clickable and no hover effect",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "multipleLine",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Multi-line",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "wrap",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Whether to wrap, by default, the text will be hidden",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            }
+        ]
+    },
+    {
+        "tag": "message",
+        "parent": [],
+        "child": [],
+        "description": "Show the result of an operation, Support 5 types (success, cancel, info, waiting, warn), Display up to two buttons to set text, clickable, and bind tap functions",
+        "attrs": [
+            {
+                "valueName": "className",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Custom class",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "title",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Main title",
+                "isRequired": true,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "type",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Support 5 types (success, cancel, info, waiting, warn)",
+                "isRequired": false,
+                "isEnum": true,
+                "enumValue": [
+                    "success",
+                    "cancel",
+                    "info",
+                    "waiting",
+                    "warn"
+                ]
+            },
+            {
+                "valueName": "subTitle",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "subtitle",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "mainButton",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Main button text and availability related, Object:{buttonText: \"确认\",disabled: false}	",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "subButton",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Main button text and availability related, Object:{buttonText: \"取消\",disabled: false}	",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onTapMain",
+                "valueType": "Function",
+                "defaultValue": "",
+                "description": "Main button click function ,()=>{}",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onTapSub",
+                "valueType": "Function",
+                "defaultValue": "",
+                "description": "Sub-button click function, ()=>{}",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            }
+        ]
+    },
+    {
+        "tag": "modal",
+        "parent": [],
+        "child": [],
+        "description": "Pop-ups",
+        "attrs": [
+            {
+                "valueName": "className",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Custom class",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "show",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Whether to display modal",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "showClose",
+                "valueType": "Boolean",
+                "defaultValue": "true",
+                "description": "Whether rendering is off",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onModalClick",
+                "valueType": "Function",
+                "defaultValue": "",
+                "description": "Click on the callback part of the footer",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onModalClose",
+                "valueType": "Function",
+                "defaultValue": "",
+                "description": "Click on the closed callback, no need to set when showClose is false",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "topImage",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Top picture",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "topImageSize",
+                "valueType": "String",
+                "defaultValue": "md",
+                "description": "Top picture rule",
+                "isRequired": false,
+                "isEnum": true,
+                "enumValue": [
+                    "lg",
+                    "md",
+                    "sm"
+                ]
+            },
+            {
+                "valueName": "advice",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Is it an operational popup?",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            }
+        ]
+    },
+    {
+        "tag": "notice",
+        "parent": [],
+        "child": [],
+        "description": "Pop-ups",
+        "attrs": [
+            {
+                "valueName": "mode",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Prompt type: link, closable",
+                "isRequired": false,
+                "isEnum": true,
+                "enumValue": [
+                    "",
+                    "link",
+                    "closable"
+                ]
+            },
+            {
+                "valueName": "action",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Prompt to display text",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "show",
+                "valueType": "Boolean",
+                "defaultValue": "true",
+                "description": "Whether to display the notification bar",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onClick",
+                "valueType": "Function",
+                "defaultValue": "",
+                "description": "Click button callback",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            }
+        ]
+    },
+    {
+        "tag": "search-bar",
+        "parent": [],
+        "child": [],
+        "description": "search bar",
+        "attrs": [
+            {
+                "valueName": "value",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "The current value of the search box",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "placeholder",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "placeholder",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "focus",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Get cursor automatically",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onInput",
+                "valueType": "Function",
+                "defaultValue": "",
+                "description": "Trigger on keyboard input, (value: string) => void",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onClear",
+                "valueType": "Function",
+                "defaultValue": "",
+                "description": "Click the clear icon to trigger, (val: string) => void",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onFocus",
+                "valueType": "Function",
+                "defaultValue": "",
+                "description": "Trigger when getting focus, () => void",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onBlur",
+                "valueType": "Function",
+                "defaultValue": "",
+                "description": "Triggered when focus is lost, () => void",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onCancel",
+                "valueType": "Function",
+                "defaultValue": "",
+                "description": "Trigger when click cancel, () => void",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onSubmit",
+                "valueType": "Function",
+                "defaultValue": "",
+                "description": "Triggered when clicking enter on the keyboard, (val: string) => void",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "disabled",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Setting disabled",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "maxLength",
+                "valueType": "Number",
+                "defaultValue": "140",
+                "description": "The maximum number of characters allowed to be entered",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "showCancelButton",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Whether to display the cancel button all the time",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "hasBackButton",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Whether to display the cancel button",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            }
+        ]
+    },
+    {
+        "tag": "segment",
+        "parent": [],
+        "child": [],
+        "description": "segmenter",
+        "attrs": [
+            {
+                "valueName": "values",
+                "valueType": "Array",
+                "defaultValue": "",
+                "description": "value",
+                "isRequired": true,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "selectedIndex",
+                "valueType": "Number",
+                "defaultValue": "0",
+                "description": "Selected item number",
+                "isRequired": true,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onChange",
+                "valueType": "Function",
+                "defaultValue": "",
+                "description": "Current item change callback, Function({index, value})",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onItemTap",
+                "valueType": "Function",
+                "defaultValue": "",
+                "description": "Click item callback, Function({index, value})",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            }
+        ]
+    },
+    {
+        "tag": "stepper",
+        "parent": [],
+        "child": [],
+        "description": "Used to increase or decrease the current value",
+        "attrs": [
+            {
+                "valueName": "min",
+                "valueType": "Number",
+                "defaultValue": "0",
+                "description": "min value",
+                "isRequired": true,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "max",
+                "valueType": "Number",
+                "defaultValue": "10000",
+                "description": "max value",
+                "isRequired": true,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "value",
+                "valueType": "Number",
+                "defaultValue": "10",
+                "description": "Initial value",
+                "isRequired": true,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "step",
+                "valueType": "Float",
+                "defaultValue": "1",
+                "description": "Each time you change the number of steps, you can be a decimal",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onChange",
+                "valueType": "Function",
+                "defaultValue": "",
+                "description": "Change time callback function, Funtion(value)",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "disabled",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "disable",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "readOnly",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "input readonly",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "showNumber",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Whether to display the value, the default is not displayed",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            }
+        ]
+    },
+    {
+        "tag": "steps",
+        "parent": [],
+        "child": [],
+        "description": "Progress bar displayed according to the steps",
+        "attrs": [
+            {
+                "valueName": "activeIndex",
+                "valueType": "Number",
+                "defaultValue": "1",
+                "description": "Current activation step",
+                "isRequired": true,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "failIndex",
+                "valueType": "Number",
+                "defaultValue": "0",
+                "description": "Current failure step (only valid in vertical mode)",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "items",
+                "valueType": "Array",
+                "defaultValue": "0",
+                "description": "Step details, array[{title, description}]",
+                "isRequired": true,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "direction",
+                "valueType": "String",
+                "defaultValue": "horizontal",
+                "description": "Display direction",
+                "isRequired": false,
+                "isEnum": true,
+                "enumValue": [
+                    "vertical",
+                    "horizontal"
+                ]
+            },
+            {
+                "valueName": "className",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Outer layer overlay style",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            }
+        ]
+    },
+    {
+        "tag": "swipe-action",
+        "parent": [],
+        "child": [],
+        "description": "Sliding action",
+        "attrs": [
+            {
+                "valueName": "className",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Outer layer overlay style",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "right",
+                "valueType": "Array",
+                "defaultValue": "",
+                "description": "Sliding options, up to two, Array[Object{type: edit/delete, text: string}]",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onRightItemClick",
+                "valueType": "Function",
+                "defaultValue": "",
+                "description": "Click the swipe option, function({index, detail, extra}) ]",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            }
+        ]
+    },
+    {
+        "tag": "tabs",
+        "parent": [],
+        "child": [],
+        "description": "Sliding action",
+        "attrs": [
+            {
+                "valueName": "tabs",
+                "valueType": "Array",
+                "defaultValue": "",
+                "description": "Tab data, including option title title",
+                "isRequired": true,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "fixed",
+                "valueType": "Boolean",
+                "defaultValue": "true",
+                "description": "Set whether the tab is fixed and the width is not slidable, true is not slidable, false is slidable, default is true",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "showPlus",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Whether to show ‘+’ icon",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onPlusClick",
+                "valueType": "Function",
+                "defaultValue": "",
+                "description": "‘+’ icon callback when clicked, () => {}",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onTabClick",
+                "valueType": "Function",
+                "defaultValue": "",
+                "description": "Tab clicked callback, (index: number) => void",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onChange",
+                "valueType": "Function",
+                "defaultValue": "",
+                "description": "Triggered when the tab changes, (index: number) => void",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "tabBarBackgroundColor",
+                "valueType": "Color",
+                "defaultValue": "",
+                "description": "tabBar background color",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "tabBarActiveTextColor",
+                "valueType": "Color",
+                "defaultValue": "",
+                "description": "tabBar activates Tab text color",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "tabBarInactiveTextColor",
+                "valueType": "Color",
+                "defaultValue": "",
+                "description": "tabBar inactive Tab text color",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "tabBarUnderlineColor",
+                "valueType": "Color",
+                "defaultValue": "",
+                "description": "tabBar underline color",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            }
+        ]
+    },
+    {
+        "tag": "tab-content",
+        "parent": [],
+        "child": [],
+        "description": "View content",
+        "attrs": [
+            {
+                "valueName": "key",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "Unique index of list items",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            }
+        ]
+    },
+    {
+        "tag": "map",
+        "parent": [],
+        "child": [],
+        "description": "View content",
+        "attrs": [
+            {
+                "valueName": "longitude",
+                "valueType": "Float",
+                "defaultValue": "",
+                "description": "Center longitude",
+                "isRequired": true,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "latitude",
+                "valueType": "Float",
+                "defaultValue": "",
+                "description": "Center latitude",
+                "isRequired": true,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "scale",
+                "valueType": "Number",
+                "defaultValue": "16",
+                "description": "Zoom level, range from 5 to 18",
+                "isRequired": false,
+                "isEnum": true,
+                "enumValue": [
+                    "5",
+                    "6",
+                    "7",
+                    "8",
+                    "9",
+                    "10",
+                    "11",
+                    "12",
+                    "13",
+                    "14",
+                    "15",
+                    "16",
+                    "17",
+                    "18"
+                ]
+            },
+            {
+                "valueName": "markers",
+                "valueType": "Array",
+                "defaultValue": "",
+                "description": "Marking point",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "polyline",
+                "valueType": "Array",
+                "defaultValue": "",
+                "description": "route",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "circles",
+                "valueType": "Array",
+                "defaultValue": "",
+                "description": "circle",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "controls",
+                "valueType": "Array",
+                "defaultValue": "",
+                "description": "controls",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "polygon",
+                "valueType": "Array",
+                "defaultValue": "",
+                "description": "polygon",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "include-points",
+                "valueType": "Array",
+                "defaultValue": "",
+                "description": "Zoom the field of view to include all given coordinate points",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "show-location",
+                "valueType": "Boolean",
+                "defaultValue": "false",
+                "description": "Whether to display the current anchor point with direction",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onMarkerTap",
+                "valueType": "EventHandle",
+                "defaultValue": "",
+                "description": "Triggered when clicking on a marker",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onCalloutTap",
+                "valueType": "EventHandle",
+                "defaultValue": "",
+                "description": "Triggered when clicking on the bubble corresponding to the marker point",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onControlTap",
+                "valueType": "EventHandle",
+                "defaultValue": "",
+                "description": "Triggered when clicking on a control",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            },
+            {
+                "valueName": "onRegionChange",
+                "valueType": "EventHandle",
+                "defaultValue": "",
+                "description": "Fires when the field of view changes, {type: \"begin\" / \"end\", latitude, longitude, scale}",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
+            }
+        ]
+    }
+]

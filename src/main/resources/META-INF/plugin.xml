@@ -1,0 +1,36 @@
+<idea-plugin>
+    <id>cn.mofada.axml.plugin</id>
+    <name>Axml Of DingTalk</name>
+    <vendor email="fada@mofada.com" url="https://www.mofada.cn">About me</vendor>
+
+    <description><![CDATA[
+    应用于钉钉E应用的axml文件插件<br/>
+    支持钉钉xml的全部标签,以及代码提示<br/>
+    1.支持几乎所有标签view、swiper、scroll-view、image....暂不支持自定义组件，会有警告提示，请忽视即可<br/>
+    2.支持标签的几乎所有属性，支持枚举类型<br/>
+    3.属性会进行验证，验证不通过会给出错误提示<br/>
+    4.点击属性名称会有提示信息<br/>
+    ]]></description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <depends>com.intellij.modules.xml</depends>
+    <depends>com.intellij.modules.lang</depends>
+    <!--<depends>JavaScript</depends>-->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+        <fileTypeFactory implementation="cn.mofada.axml.language.AxmlFileTypeFactory"/>
+        <xml.tagNameProvider implementation="cn.mofada.axml.provider.AxmlTagNameProvider"/>
+        <xml.elementDescriptorProvider implementation="cn.mofada.axml.provider.AxmlTagNameProvider"/>
+        <annotator language="HTML" implementationClass="cn.mofada.axml.annotator.AxmlAnnotator"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+</idea-plugin>

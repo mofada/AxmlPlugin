@@ -1,0 +1,128 @@
+[
+    {
+        "valueName": "id",
+        "valueType": "String",
+        "defaultValue": "",
+        "description": "Component unique identifier",
+        "isRequired": false,
+        "isEnum": false,
+        "enumValue": []
+    },
+    {
+        "valueName": "data-",
+        "valueType": "String",
+        "defaultValue": "",
+        "description": "Click to pass parameter values",
+        "isRequired": false,
+        "isEnum": false,
+        "enumValue": []
+    },
+    {
+        "valueName": "style",
+        "valueType": "String",
+        "defaultValue": "",
+        "description": "inline style",
+        "isRequired": false,
+        "isEnum": false,
+        "enumValue": []
+    },
+    {
+        "valueName": "class",
+        "valueType": "String",
+        "defaultValue": "",
+        "description": "class",
+        "isRequired": false,
+        "isEnum": false,
+        "enumValue": []
+    },
+    {
+        "valueName": "onTap",
+        "valueType": "EventHandle",
+        "defaultValue": "onTap",
+        "description": "click event, Function({currentTarget})=>{}",
+        "isRequired": false,
+        "isEnum": false,
+        "enumValue": []
+    },
+    {
+        "valueName": "onTouchStart",
+        "valueType": "EventHandle",
+        "defaultValue": "",
+        "description": "Touch action begins",
+        "isRequired": false,
+        "isEnum": false,
+        "enumValue": []
+    },
+    {
+        "valueName": "onTouchMove",
+        "valueType": "EventHandle",
+        "defaultValue": "",
+        "description": "Move after touching",
+        "isRequired": false,
+        "isEnum": false,
+        "enumValue": []
+    },
+    {
+        "valueName": "onTouchEnd",
+        "valueType": "EventHandle",
+        "defaultValue": "",
+        "description": "End of touch action",
+        "isRequired": false,
+        "isEnum": false,
+        "enumValue": []
+    },
+    {
+        "valueName": "onTouchCancel",
+        "valueType": "EventHandle",
+        "defaultValue": "",
+        "description": "The touch action is interrupted, such as an incoming call reminder, pop-up window",
+        "isRequired": false,
+        "isEnum": false,
+        "enumValue": []
+    },
+    {
+        "valueName": "onLongTap",
+        "valueType": "EventHandle",
+        "defaultValue": "",
+        "description": "Trigger after a long press of 500ms, triggering a long press event will not trigger the scrolling of the screen",
+        "isRequired": false,
+        "isEnum": false,
+        "enumValue": []
+    },
+    {
+        "valueName": "a:for",
+        "valueType": "Mustache",
+        "defaultValue": "",
+        "description": "Mustache for loop",
+        "isRequired": false,
+        "isEnum": false,
+        "enumValue": []
+    },
+    {
+        "valueName": "a:if",
+        "valueType": "Mustache",
+        "defaultValue": "",
+        "description": "Mustache if expression",
+        "isRequired": false,
+        "isEnum": false,
+        "enumValue": []
+    },
+    {
+        "valueName": "a:elif",
+        "valueType": "Mustache",
+        "defaultValue": "",
+        "description": "Mustache else if expression",
+        "isRequired": false,
+        "isEnum": false,
+        "enumValue": []
+    },
+    {
+        "valueName": "a:else",
+        "valueType": "Mustache",
+        "defaultValue": "",
+        "description": "Mustache else expression",
+        "isRequired": false,
+        "isEnum": false,
+        "enumValue": []
+    }
+]
