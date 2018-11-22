@@ -4,12 +4,12 @@
     <vendor email="fada@mofada.cn" url="https://www.mofada.cn">About me</vendor>
 
     <description><![CDATA[
-    应用于钉钉E应用的axml文件插件<br/>
-    支持钉钉xml的全部标签,以及代码提示<br/>
-    1.支持几乎所有标签view、swiper、scroll-view、image....暂不支持自定义组件，会有警告提示，请忽视即可<br/>
-    2.支持标签的几乎所有属性，支持枚举类型<br/>
-    3.属性会进行验证，验证不通过会给出错误提示<br/>
-    4.点击属性名称会有提示信息<br/>
+    Axml file plugin for DingTalk E application<br/>
+  Support all tags of DingTalk xml, as well as code hints<br/>
+  1. Support almost all label views, swiper, scroll-view, image.... No custom components are supported at the moment, there will be warnings, please ignore them.<br/>
+  2. Support almost all attributes of the tag, support enumeration type<br/>
+  3. The attribute will be verified, and if the verification fails, an error will be given.
+  4. Click on the attribute name to have a message.
     ]]></description>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
@@ -17,6 +17,9 @@
     <!-- uncomment to enable plugin in all products
     <depends>com.intellij.modules.lang</depends>
     -->
+    <!-- Minimum and maximum build of IDEA compatible with the plugin -->
+    <!--<idea-version since-build="3000" until-build="3999"/>-->
+    <idea-version since-build="145.258.11"/>
 
     <depends>com.intellij.modules.xml</depends>
     <depends>com.intellij.modules.lang</depends>

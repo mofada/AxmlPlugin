@@ -1,5 +1,6 @@
 1.如何使用  
-[下载插件](https://plugins.jetbrains.com/plugin/11332-axml-of-dingtalk)或者Setting->plugins->search(暂不支持)
+[下载插件](https://plugins.jetbrains.com/plugin/11332-axml-of-dingtalk)或者Setting->plugins->search->*Axml Of DingTalk*
+![setting](images/setting-search.png)
 
 *这个错误暂时还没找到解决办法, 所以我都是去掉这个提示, 并不影响使用*
 ![错误提示](images/attribute-a.png)

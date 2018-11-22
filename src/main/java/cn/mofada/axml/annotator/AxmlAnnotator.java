@@ -144,7 +144,7 @@ public class AxmlAnnotator implements Annotator {
 
             //验证枚举
             if (attrsBean.isEnum()) {
-                if (!attrsBean.getEnumValue().contains(attributeValue)) {
+                if (!attrsBean.getEnumValue().contains(attributeValue) && !attributeValue.matches(MUSTACHE_REGEX)) {
                     createAnnotation(attribute, holder, attributeName, " can only be in " + arrayToString(attrsBean.getEnumValue()));
                 }
             }

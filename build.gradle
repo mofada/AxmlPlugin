@@ -3,8 +3,8 @@ plugins {
     id 'org.jetbrains.intellij' version '0.3.12'
 }
 
-group 'cn.mofada.axml'
-version '1.2'
+group 'cn.mofada.axml.plugin'
+version '1.7'
 
 sourceCompatibility = 1.8
 
@@ -17,20 +17,29 @@ dependencies {
 }
 
 publishPlugin {
-//    username intellijPublishUsername
-//    password intellijPublishPassword
+    username intellijPublishUsername
+    password intellijPublishPassword
 }
 
 
 intellij {
-    version '2018.2.6'
+//    version '2018.2.6'
+    version 'IC-2017.3.5'
+    pluginName 'AxmlPlugin'
+    intellij.updateSinceUntilBuild false
+    downloadSources false
+    updateSinceUntilBuild false
 }
+
 patchPluginXml {
     changeNotes """
-      1.添加了Map组件.<br>
-      2.修复了一些bug.<br>
-      3.修复了属性提示, 因为之前的替换空格而误操作, 现已修复.<br>
-      4.添加更多属性, a:for-item、a:for-index等.<br>
-      5.修复小bug<br>
+    1. Added Map component.<br>
+  2. Fixed some bugs.<br>
+  3. Fixed the property prompt, because the previous replacement of the space and misuse, has been fixed.<br>
+  4. Add more attributes, a:for-item, a:for-index, etc.<br>
+   6. Fix small bugs<br>
+  7. Add Enum mustache grammar<br>
+  8. Update plugin using version in idea 2018.3<br>
+  9. Fix card onClick attribute<br>
       """
 }

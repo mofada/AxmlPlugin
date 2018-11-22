@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_axmlplugin_main" default="compile.module.axmlplugin_main">
+  <dirname property="module.axmlplugin_main.basedir" file="${ant.file.module_axmlplugin_main}"/>
+  
+  <property name="module.jdk.home.axmlplugin_main" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.axmlplugin_main" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.axmlplugin_main" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.axmlplugin_main" value="-encoding UTF-8 -source 8 -target 1.8 ${compiler.args}"/>
+  
+  <property name="axmlplugin_main.output.dir" value="${module.axmlplugin_main.basedir}/../../out/production/classes"/>
+  <property name="axmlplugin_main.testoutput.dir" value="${module.axmlplugin_main.basedir}/../../out/production/classes"/>
+  
+  <path id="axmlplugin_main.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="axmlplugin_main.module.production.classpath">
+    <path refid="${module.jdk.classpath.axmlplugin_main}"/>
+    <path refid="library.gradle:_com.jetbrains:ideaic:2017.3.5.classpath"/>
+  </path>
+  
+  <path id="axmlplugin_main.runtime.production.module.classpath">
+    <pathelement location="${axmlplugin_main.output.dir}"/>
+    <path refid="library.gradle:_com.jetbrains:ideaic:2017.3.5.classpath"/>
+    <pathelement location="D:/Program Files/Java/jdk1.8.0_191/lib/tools.jar"/>
+  </path>
+  
+  <path id="axmlplugin_main.module.classpath">
+    <path refid="${module.jdk.classpath.axmlplugin_main}"/>
+    <pathelement location="${axmlplugin_main.output.dir}"/>
+    <path refid="library.gradle:_com.jetbrains:ideaic:2017.3.5.classpath"/>
+    <pathelement location="D:/Program Files/Java/jdk1.8.0_191/lib/tools.jar"/>
+  </path>
+  
+  <path id="axmlplugin_main.runtime.module.classpath">
+    <pathelement location="${axmlplugin_main.output.dir}"/>
+    <path refid="library.gradle:_com.jetbrains:ideaic:2017.3.5.classpath"/>
+    <pathelement location="D:/Program Files/Java/jdk1.8.0_191/lib/tools.jar"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.axmlplugin_main">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.axmlplugin_main">
+    <patternset refid="excluded.from.module.axmlplugin_main"/>
+  </patternset>
+  
+  <path id="axmlplugin_main.module.sourcepath">
+    <dirset dir="${module.axmlplugin_main.basedir}/../../src/main">
+      <include name="java"/>
+      <include name="resources"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.axmlplugin_main" depends="compile.module.axmlplugin_main.production,compile.module.axmlplugin_main.tests" description="Compile module AxmlPlugin_main"/>
+  
+  <target name="compile.module.axmlplugin_main.production" depends="register.custom.compilers" description="Compile module AxmlPlugin_main; production classes">
+    <mkdir dir="${axmlplugin_main.output.dir}"/>
+    <javac2 destdir="${axmlplugin_main.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.axmlplugin_main}/javac">
+      <compilerarg line="${compiler.args.axmlplugin_main}"/>
+      <bootclasspath refid="axmlplugin_main.module.bootclasspath"/>
+      <classpath refid="axmlplugin_main.module.production.classpath"/>
+      <src refid="axmlplugin_main.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.axmlplugin_main"/>
+    </javac2>
+    
+    <copy todir="${axmlplugin_main.output.dir}">
+      <fileset dir="${module.axmlplugin_main.basedir}/../../src/main/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.axmlplugin_main.basedir}/../../src/main/resources">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.axmlplugin_main.tests" depends="register.custom.compilers,compile.module.axmlplugin_main.production" description="compile module AxmlPlugin_main; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.axmlplugin_main" description="cleanup module">
+    <delete dir="${axmlplugin_main.output.dir}"/>
+    <delete dir="${axmlplugin_main.testoutput.dir}"/>
+  </target>
+</project>

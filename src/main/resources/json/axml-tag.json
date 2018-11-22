@@ -1541,10 +1541,10 @@
                 "enumValue": []
             },
             {
-                "valueName": "onCardClick",
+                "valueName": "onClick",
                 "valueType": "EventHandle",
                 "defaultValue": "",
-                "description": "Card clickback callback, Function({info})",
+                "description": "Card click callback, Function({info})",
                 "isRequired": false,
                 "isEnum": false,
                 "enumValue": []
