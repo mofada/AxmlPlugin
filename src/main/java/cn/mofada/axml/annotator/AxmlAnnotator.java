@@ -23,7 +23,7 @@ public class AxmlAnnotator implements Annotator {
     private static final String JOIN_SPLIT = ",";
 
     private static final String MUSTACHE_REGEX = "^\\{\\{(.+)}}$";
-    private static final String NUMBER_REGEX = "[0-9]+";
+    private static final String NUMBER_REGEX = "-?[0-9]+";
     private static final String FLOAT_REGEX = "[0-9]*.?[0-9]*";
     private static final String COLOR_REGEX = "^#([0-9]|[A-F]|[a-f]){3}|([0-9]|[A-F]|[a-f]){6}$|^rgb\\(([0-9]{1,2}|1[0-9][0-9]|2[0-4][0-9]|25[0-5]),([0-9]{1,2}|1[0-9][0-9]|2[0-4][0-9]|25[0-5]),([0-9]{1,2}|1[0-9][0-9]|2[0-4][0-9]|25[0-5])\\)$|^rgba\\(([0-9]{1,2}|1[0-9][0-9]|2[0-4][0-9]|25[0-5]),([0-9]{1,2}|1[0-9][0-9]|2[0-4][0-9]|25[0-5]),([0-9]{1,2}|1[0-9][0-9]|2[0-4][0-9]|25[0-5]),([0].[0-9]{1,2}|1)\\)$";
 
@@ -55,14 +55,14 @@ public class AxmlAnnotator implements Annotator {
             }
 
             //验证父元素
-            if (tagsByTag.getParent().size() != 0) {
-                checkTagParent(element, holder, tagsByTag);
-            }
+//            if (tagsByTag.getParent().size() != 0) {
+//                checkTagParent(element, holder, tagsByTag);
+//            }
 
             //验证子元素
-            if (tagsByTag.getChild().size() != 0) {
-                checkTagChild((XmlTag) element, holder, tagsByTag);
-            }
+//            if (tagsByTag.getChild().size() != 0) {
+//                checkTagChild((XmlTag) element, holder, tagsByTag);
+//            }
 
             // 验证属性值
             XmlAttribute[] attributes = ((XmlTag) element).getAttributes();
