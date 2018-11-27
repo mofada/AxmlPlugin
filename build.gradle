@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'cn.mofada.axml.plugin'
-version '1.8'
+version '1.9'
 
 sourceCompatibility = 1.8
 
@@ -42,5 +42,6 @@ patchPluginXml {
   8. Update plugin using version in idea 2018.3<br>
   9. Fix card onClick attribute<br>
   10. Remove the validation of the parent/child element<br>
+  11. Add the extra field in the swipe-action<br>
       """
 }

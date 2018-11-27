@@ -8,8 +8,9 @@
   Support all tags of DingTalk xml, as well as code hints<br/>
   1. Support almost all label views, swiper, scroll-view, image.... No custom components are supported at the moment, there will be warnings, please ignore them.<br/>
   2. Support almost all attributes of the tag, support enumeration type<br/>
-  3. The attribute will be verified, and if the verification fails, an error will be given.
-  4. Click on the attribute name to have a message.
+  3. The attribute will be verified, and if the verification fails, an error will be given.<br/>
+  4. Click on the attribute name to have a message.<br/>
+    5. I am currently using it myself, I will update it when I find the problem.<br/>
     ]]></description>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html

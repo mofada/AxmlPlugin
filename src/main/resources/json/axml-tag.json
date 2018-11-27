@@ -2469,6 +2469,14 @@
                 "isRequired": false,
                 "isEnum": false,
                 "enumValue": []
+            }, {
+                "valueName": "extra",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "The past extra value passed when right clicked",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
             }
         ]
     },
