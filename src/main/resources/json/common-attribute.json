@@ -1,164 +1,218 @@
 [
-    {
-        "valueName": "id",
-        "valueType": "String",
-        "defaultValue": "",
-        "description": "Component unique identifier",
-        "isRequired": false,
-        "isEnum": false,
-        "enumValue": []
-    },
-    {
-        "valueName": "data-",
-        "valueType": "String",
-        "defaultValue": "",
-        "description": "Click to pass parameter values",
-        "isRequired": false,
-        "isEnum": false,
-        "enumValue": []
-    },
-    {
-        "valueName": "style",
-        "valueType": "String",
-        "defaultValue": "",
-        "description": "inline style",
-        "isRequired": false,
-        "isEnum": false,
-        "enumValue": []
-    },
-    {
-        "valueName": "class",
-        "valueType": "String",
-        "defaultValue": "",
-        "description": "class",
-        "isRequired": false,
-        "isEnum": false,
-        "enumValue": []
-    },
-    {
-        "valueName": "onTap",
-        "valueType": "EventHandle",
-        "defaultValue": "onTap",
-        "description": "click event, Function({currentTarget})=>{}",
-        "isRequired": false,
-        "isEnum": false,
-        "enumValue": []
-    },
-    {
-        "valueName": "onTouchStart",
-        "valueType": "EventHandle",
-        "defaultValue": "",
-        "description": "Touch action begins",
-        "isRequired": false,
-        "isEnum": false,
-        "enumValue": []
-    },
-    {
-        "valueName": "onTouchMove",
-        "valueType": "EventHandle",
-        "defaultValue": "",
-        "description": "Move after touching",
-        "isRequired": false,
-        "isEnum": false,
-        "enumValue": []
-    },
-    {
-        "valueName": "onTouchEnd",
-        "valueType": "EventHandle",
-        "defaultValue": "",
-        "description": "End of touch action",
-        "isRequired": false,
-        "isEnum": false,
-        "enumValue": []
-    },
-    {
-        "valueName": "onTouchCancel",
-        "valueType": "EventHandle",
-        "defaultValue": "",
-        "description": "The touch action is interrupted, such as an incoming call reminder, pop-up window",
-        "isRequired": false,
-        "isEnum": false,
-        "enumValue": []
-    },
-    {
-        "valueName": "onLongTap",
-        "valueType": "EventHandle",
-        "defaultValue": "",
-        "description": "Trigger after a long press of 500ms, triggering a long press event will not trigger the scrolling of the screen",
-        "isRequired": false,
-        "isEnum": false,
-        "enumValue": []
-    },
-    {
-        "valueName": "a:for",
-        "valueType": "Mustache",
-        "defaultValue": "",
-        "description": "Attributes can be bound to an array, and then the component can be rendered repeatedly using the data from each item in the array.",
-        "isRequired": false,
-        "isEnum": false,
-        "enumValue": []
-    },
-    {
-        "valueName": "a:for-index",
-        "valueType": "Mustache",
-        "defaultValue": "",
-        "description": "You can specify the variable name of the current subscript of the array.",
-        "isRequired": false,
-        "isEnum": false,
-        "enumValue": []
-    },
-    {
-        "valueName": "a:for-item",
-        "valueType": "Mustache",
-        "defaultValue": "",
-        "description": "You can specify the variable name of the current element of the array",
-        "isRequired": false,
-        "isEnum": false,
-        "enumValue": []
-    },
-    {
-        "valueName": "a:key",
-        "valueType": "Mustache",
-        "defaultValue": "",
-        "description": "If the location of the item in the list changes dynamically or a new item is added to the list, and you want the item in the list to maintain its own characteristics and state (such as the input in <input/>, the selected state of <switch/>) You need to use a:key to specify a unique identifier for the item in the list.",
-        "isRequired": false,
-        "isEnum": false,
-        "enumValue": []
-    },
-    {
-        "valueName": "key",
-        "valueType": "Mustache",
-        "defaultValue": "",
-        "description": "Key is a more general way of writing than a:key, which can be filled with arbitrary expressions and strings.",
-        "isRequired": false,
-        "isEnum": false,
-        "enumValue": []
-    },
-    {
-        "valueName": "a:if",
-        "valueType": "Mustache",
-        "defaultValue": "",
-        "description": "To determine if you need to render the code block",
-        "isRequired": false,
-        "isEnum": false,
-        "enumValue": []
-    },
-    {
-        "valueName": "a:elif",
-        "valueType": "Mustache",
-        "defaultValue": "",
-        "description": "Mustache else if expression",
-        "isRequired": false,
-        "isEnum": false,
-        "enumValue": []
-    },
-    {
-        "valueName": "a:else",
-        "valueType": "Mustache",
-        "defaultValue": "",
-        "description": "Mustache else expression",
-        "isRequired": false,
-        "isEnum": false,
-        "enumValue": []
-    }
+  {
+    "valueName": "id",
+    "valueType": "String",
+    "defaultValue": "",
+    "description": "Component unique identifier",
+    "isRequired": false,
+    "isEnum": false,
+    "enumValue": []
+  },
+  {
+    "valueName": "data-",
+    "valueType": "String",
+    "defaultValue": "",
+    "description": "Click to pass parameter values",
+    "isRequired": false,
+    "isEnum": false,
+    "enumValue": []
+  },
+  {
+    "valueName": "style",
+    "valueType": "String",
+    "defaultValue": "",
+    "description": "inline style",
+    "isRequired": false,
+    "isEnum": false,
+    "enumValue": []
+  },
+  {
+    "valueName": "class",
+    "valueType": "String",
+    "defaultValue": "",
+    "description": "class",
+    "isRequired": false,
+    "isEnum": false,
+    "enumValue": []
+  },
+  {
+    "valueName": "onTap",
+    "valueType": "EventHandle",
+    "defaultValue": "onTap",
+    "description": "click event, Function({currentTarget})=>{}",
+    "isRequired": false,
+    "isEnum": false,
+    "enumValue": []
+  },
+  {
+    "valueName": "catchTap",
+    "valueType": "EventHandle",
+    "defaultValue": "catchTap",
+    "description": "click event, it will tissue bubbling, Function({currentTarget})=>{}",
+    "isRequired": false,
+    "isEnum": false,
+    "enumValue": []
+  },
+  {
+    "valueName": "onTouchStart",
+    "valueType": "EventHandle",
+    "defaultValue": "",
+    "description": "Touch action begins",
+    "isRequired": false,
+    "isEnum": false,
+    "enumValue": []
+  },
+  {
+    "valueName": "catchTouchStart",
+    "valueType": "EventHandle",
+    "defaultValue": "",
+    "description": "Touch action begins, it will tissue bubbling",
+    "isRequired": false,
+    "isEnum": false,
+    "enumValue": []
+  },
+  {
+    "valueName": "onTouchMove",
+    "valueType": "EventHandle",
+    "defaultValue": "",
+    "description": "Move after touching",
+    "isRequired": false,
+    "isEnum": false,
+    "enumValue": []
+  },
+  {
+    "valueName": "catchTouchMove",
+    "valueType": "EventHandle",
+    "defaultValue": "",
+    "description": "Move after touching, it will tissue bubbling",
+    "isRequired": false,
+    "isEnum": false,
+    "enumValue": []
+  },
+  {
+    "valueName": "onTouchEnd",
+    "valueType": "EventHandle",
+    "defaultValue": "",
+    "description": "End of touch action",
+    "isRequired": false,
+    "isEnum": false,
+    "enumValue": []
+  },
+  {
+    "valueName": "catchTouchEnd",
+    "valueType": "EventHandle",
+    "defaultValue": "",
+    "description": "End of touch action, it will tissue bubbling",
+    "isRequired": false,
+    "isEnum": false,
+    "enumValue": []
+  },
+  {
+    "valueName": "onTouchCancel",
+    "valueType": "EventHandle",
+    "defaultValue": "",
+    "description": "The touch action is interrupted, such as an incoming call reminder, pop-up window",
+    "isRequired": false,
+    "isEnum": false,
+    "enumValue": []
+  },
+  {
+    "valueName": "catchTouchCancel",
+    "valueType": "EventHandle",
+    "defaultValue": "",
+    "description": "The touch action is interrupted, such as an incoming call reminder, pop-up window, it will tissue bubbling",
+    "isRequired": false,
+    "isEnum": false,
+    "enumValue": []
+  },
+  {
+    "valueName": "onLongTap",
+    "valueType": "EventHandle",
+    "defaultValue": "",
+    "description": "Trigger after a long press of 500ms, triggering a long press event will not trigger the scrolling of the screen",
+    "isRequired": false,
+    "isEnum": false,
+    "enumValue": []
+  },
+  {
+    "valueName": "catchLongTap",
+    "valueType": "EventHandle",
+    "defaultValue": "",
+    "description": "Trigger after a long press of 500ms, triggering a long press event will not trigger the scrolling of the screen, it will tissue bubbling",
+    "isRequired": false,
+    "isEnum": false,
+    "enumValue": []
+  },
+  {
+    "valueName": "a:for",
+    "valueType": "Mustache",
+    "defaultValue": "",
+    "description": "Attributes can be bound to an array, and then the component can be rendered repeatedly using the data from each item in the array.",
+    "isRequired": false,
+    "isEnum": false,
+    "enumValue": []
+  },
+  {
+    "valueName": "a:for-index",
+    "valueType": "Mustache",
+    "defaultValue": "",
+    "description": "You can specify the variable name of the current subscript of the array.",
+    "isRequired": false,
+    "isEnum": false,
+    "enumValue": []
+  },
+  {
+    "valueName": "a:for-item",
+    "valueType": "Mustache",
+    "defaultValue": "",
+    "description": "You can specify the variable name of the current element of the array",
+    "isRequired": false,
+    "isEnum": false,
+    "enumValue": []
+  },
+  {
+    "valueName": "a:key",
+    "valueType": "Mustache",
+    "defaultValue": "",
+    "description": "If the location of the item in the list changes dynamically or a new item is added to the list, and you want the item in the list to maintain its own characteristics and state (such as the input in <input/>, the selected state of <switch/>) You need to use a:key to specify a unique identifier for the item in the list.",
+    "isRequired": false,
+    "isEnum": false,
+    "enumValue": []
+  },
+  {
+    "valueName": "key",
+    "valueType": "Mustache",
+    "defaultValue": "",
+    "description": "Key is a more general way of writing than a:key, which can be filled with arbitrary expressions and strings.",
+    "isRequired": false,
+    "isEnum": false,
+    "enumValue": []
+  },
+  {
+    "valueName": "a:if",
+    "valueType": "Mustache",
+    "defaultValue": "",
+    "description": "To determine if you need to render the code block",
+    "isRequired": false,
+    "isEnum": false,
+    "enumValue": []
+  },
+  {
+    "valueName": "a:elif",
+    "valueType": "Mustache",
+    "defaultValue": "",
+    "description": "Mustache else if expression",
+    "isRequired": false,
+    "isEnum": false,
+    "enumValue": []
+  },
+  {
+    "valueName": "a:else",
+    "valueType": "Mustache",
+    "defaultValue": "",
+    "description": "Mustache else expression",
+    "isRequired": false,
+    "isEnum": false,
+    "enumValue": []
+  }
 ]

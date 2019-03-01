@@ -4,13 +4,27 @@
     <vendor email="fada@mofada.cn" url="https://www.mofada.cn">About me</vendor>
 
     <description><![CDATA[
-    Axml file plugin for DingTalk E application<br/>
-  Support all tags of DingTalk xml, as well as code hints<br/>
-  1. Support almost all label views, swiper, scroll-view, image.... No custom components are supported at the moment, there will be warnings, please ignore them.<br/>
-  2. Support almost all attributes of the tag, support enumeration type<br/>
-  3. The attribute will be verified, and if the verification fails, an error will be given.<br/>
-  4. Click on the attribute name to have a message.<br/>
-    5. I am currently using it myself, I will update it when I find the problem.<br/>
+open source project url : https://github.com/mofada/AxmlPlugin<br>
+<br>
+Axml file plugin for DingTalk E application<br/>
+Support all tags of DingTalk xml, as well as code hints<br/>
+1. Support almost all label views, swiper, scroll-view, image.... No custom components are supported at the moment, there will be warnings, please ignore them.<br/>
+2. Support almost all attributes of the tag, support enumeration type<br/>
+3. The attribute will be verified, and if the verification fails, an error will be given.<br/>
+4. Click on the attribute name to have a message.<br/>
+5. I am currently using it myself, I will update it when I find the problem.<br/>
+<br/>
+<br/>
+<br/>
+项目开源地址 : https://github.com/mofada/AxmlPlugin<br>
+<br>
+钉钉AXML文件支持!
+支持所有的钉钉标签, 并且会有代码提示。<br/>
+1.支持几乎所有的标签, 例如view / swiper / scroll-view / iamge ... 目前不支持自定义组件，会有警告，请忽略它们。<br/>
+2.支持几乎所有标签属性，支持枚举类型。<br/>
+3.将验证属性，如果验证失败，将给出错误。<br/>
+4.单击属性名称以显示消息。<br/>
+5.我现在正在使用它，当我发现问题时，我会更新它。<br/>
     ]]></description>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html

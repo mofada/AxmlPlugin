@@ -2767,6 +2767,15 @@
                 "isRequired": false,
                 "isEnum": false,
                 "enumValue": []
+            },
+            {
+                "valueName": "name",
+                "valueType": "String",
+                "defaultValue": "",
+                "description": "template name",
+                "isRequired": false,
+                "isEnum": false,
+                "enumValue": []
             }
         ]
     },

@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'cn.mofada.axml.plugin'
-version '1.9'
+version '2.0'
 
 sourceCompatibility = 1.8
 
@@ -33,15 +33,30 @@ intellij {
 
 patchPluginXml {
     changeNotes """
-    1. Added Map component.<br>
-  2. Fixed some bugs.<br>
-  3. Fixed the property prompt, because the previous replacement of the space and misuse, has been fixed.<br>
-  4. Add more attributes, a:for-item, a:for-index, etc.<br>
-   6. Fix small bugs<br>
-  7. Add Enum mustache grammar<br>
-  8. Update plugin using version in idea 2018.3<br>
-  9. Fix card onClick attribute<br>
-  10. Remove the validation of the parent/child element<br>
-  11. Add the extra field in the swipe-action<br>
-      """
+1. Added Map component.<br>
+2. Fixed some bugs.<br>
+3. Fixed the property prompt, because the previous replacement of the space and misuse, has been fixed.<br>
+4. Add more attributes, a:for-item, a:for-index, etc.<br>
+5. Fix small bugs<br>
+6. Add Enum mustache grammar<br>
+7. Update plugin using version in idea 2018.3<br>
+8. Fix card onClick attribute<br>
+9. Remove the validation of the parent/child element<br>
+10. Add the extra field in the swipe-action<br>
+11. Add the event attribute at the beginning of the catch, which prevents bubbling, and does not organize bubbling at the beginning of on.<br>
+<br>
+<br>
+<br>
+1.添加了Map组件。<br>
+2.修正了一些错误。<br>
+3.修复了属性提示，因为之前更换的控件和误用，已得到修复<br>
+4.添加更多属性，a：for-item，a：for-index等。<br>
+5.修复小错误<br>
+6.添加Enum mustache语法<br>
+7.使用idea 2018.3中的版本更新插件<br>
+8.修复卡onClick属性<br>
+9.删除父/子元素的验证<br>
+10.在滑动操作<br>中添加额外字段<br>
+11.添加catch开头的事件属性, 即阻止冒泡, on开头的不组织冒泡<br>
+    """
 }

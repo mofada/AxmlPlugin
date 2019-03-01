@@ -1,1 +1,10 @@
 gradle.properties
+
+# 忽略.gradle
+.gradle
+
+# 忽略build
+.build
+
+# 忽略输出
+out

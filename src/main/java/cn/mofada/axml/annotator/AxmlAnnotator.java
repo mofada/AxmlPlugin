@@ -69,6 +69,7 @@ public class AxmlAnnotator implements Annotator {
             for (XmlAttribute attribute : attributes) {
                 checkAttribute(attribute, holder, tagsByTag.getAttrs());
             }
+
         }
     }
 
